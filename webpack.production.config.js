@@ -5,10 +5,10 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 
 module.exports = {
     entry: {
-        'hello-world': './src/index.js'
+        entry: './src/index.js',
     },
     output: {
-        filename: '[name].[contenthash].js',
+        filename: 'main.bundle.js',
         path: path.resolve(__dirname, './dist/'),
         clean: true
     },
